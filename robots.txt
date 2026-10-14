@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.lasdosterrazas.com/sitemap.xml
+Sitemap: https://www.barrestaurantedomino.com/sitemap.xml
