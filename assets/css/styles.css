@@ -380,6 +380,18 @@ a:hover {
   color: var(--white);
 }
 
+.hero--home h1 {
+  font-size: clamp(2.45rem, 5vw, 4.8rem);
+  line-height: 1.06;
+}
+
+.hero__intro {
+  max-width: 640px;
+  margin: 0 0 26px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
 .hero h1 {
   max-width: 780px;
   margin: 0 0 26px;
