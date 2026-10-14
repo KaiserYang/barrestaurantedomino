@@ -1,4 +1,4 @@
-# las-dos-terrazas
+# Bar Restaurante Domino
 
 Estructura estática multipágina para una web de restaurante.
 
