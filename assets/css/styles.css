@@ -1206,7 +1206,7 @@ a:hover {
 .hero--home h1 {
   max-width: 900px;
   margin: 0 0 14px;
-  font-size: clamp(2rem, 3.6vw, 3.5rem);
+  font-size: clamp(2.12rem, 3.816vw, 3.71rem);
   line-height: 1.12;
   overflow-wrap: normal;
 }
