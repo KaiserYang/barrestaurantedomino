@@ -1,22 +1,21 @@
 # Bar Restaurante Domino
 
-Estructura estática multipágina para una web de restaurante.
+Sitio web estático y multipágina de Bar Restaurante Domino, en Las Tablas (Madrid).
 
-## Páginas
+## Páginas públicas
 
-- `index.html`: inicio
-- `ficha-tecnica.html`: ficha técnica del restaurante
-- `restaurante.html`: presentacion del restaurante
-- `historia.html`: historia
-- `reconocimientos.html`: reconocimientos
-- `desayunos.html`: desayunos
-- `carta.html`: carta
-- `carta-vinos.html`: vinos y bebidas
-- `reservas.html`: reservas por WhatsApp o llamada
-- `contacto.html`: contacto y mapa
-- `aviso-legal.html`, `privacidad.html`, `cookies.html`: páginas legales
+- `index.html`: portada, platos destacados, menú del día, planes, horario y ubicación.
+- `desayunos.html`: desayunos, bebidas, sándwiches, hamburguesas, platos combinados y bocadillos.
+- `raciones.html`: raciones de la casa, tapas y pinchos.
+- `carta-vinos.html`: vinos y bebidas.
+- `reservas.html`: reservas por WhatsApp o llamada.
+- `contacto.html`: contacto y mapa.
+- `aviso-legal.html`, `privacidad.html`, `cookies.html`: información legal.
 
-## Assets
+## Estructura
 
-- `assets/css/styles.css`: estilos compartidos
-- `assets/js/main.js`: menu responsive, submenus, cabecera con scroll y formulario
+- `assets/css/styles.css`: estilos compartidos y portada.
+- `assets/js/main.js`: navegación responsive, submenús y presentación de precios.
+- `Resources/`: logotipo, fotografías y fondos de las cartas.
+
+No requiere compilación: puede servirse directamente como sitio estático.

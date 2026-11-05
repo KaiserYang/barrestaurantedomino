@@ -18,6 +18,15 @@
     navToggle.addEventListener("click", function () {
       const isOpen = navMenu.classList.toggle("is-open");
       navToggle.setAttribute("aria-expanded", String(isOpen));
+      const label = navToggle.querySelector(".sr-only");
+      if (label) label.textContent = isOpen ? "Cerrar menú" : "Abrir menú";
+    });
+
+    navMenu.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        navMenu.classList.remove("is-open");
+        navToggle.setAttribute("aria-expanded", "false");
+      });
     });
   }
 
@@ -38,6 +47,19 @@
       const button = item.querySelector(".submenu-toggle");
       if (button) button.setAttribute("aria-expanded", "false");
     });
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key !== "Escape") return;
+    document.querySelectorAll(".has-submenu.is-open").forEach(function (item) {
+      item.classList.remove("is-open");
+      const button = item.querySelector(".submenu-toggle");
+      if (button) button.setAttribute("aria-expanded", "false");
+    });
+    if (navMenu && navToggle) {
+      navMenu.classList.remove("is-open");
+      navToggle.setAttribute("aria-expanded", "false");
+    }
   });
 
   carousels.forEach(function (carousel) {
@@ -84,7 +106,9 @@
       });
     }
 
-    startTimer();
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      startTimer();
+    }
   });
 
   function isPriceText(value) {
