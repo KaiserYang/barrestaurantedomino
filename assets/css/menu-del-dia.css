@@ -36,8 +36,10 @@ body.daily-menu-page > main {
 .daily-option__finish { margin: 20px 0 0; padding-top: 16px; border-top: 1px solid var(--line); font: 14px/1.6 Arial, sans-serif; }
 .daily-option__finish strong { color: var(--terracotta-dark); }
 .daily-option--complete { background: var(--terracotta-dark); border-color: var(--terracotta-dark); color: white; }
-.daily-option--complete h3, .daily-option--complete .daily-option__finish strong { color: white; }
-.daily-option--complete .daily-option__price { color: #ffe5a3; }
+.daily-option--complete h3 { color: white; }
+.daily-option--complete .daily-option__price,
+.daily-option--complete .daily-option__finish,
+.daily-option--complete .daily-option__finish strong { color: #ffe5a3; }
 .daily-option--complete .daily-option__eyebrow, .daily-option--complete .daily-option__includes { color: #f3ddcb; }
 .daily-option--complete .daily-option__finish { border-color: #ffffff40; }
 @media (max-width: 800px) {
